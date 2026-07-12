@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Free AI Tools</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; }
+        .btn { padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Free AI Tools</h1>
+    <p>यहाँ आप उपयोगी AI टूल्स पा सकते हैं।</p>
+    <a href="index.html" class="btn">वापस होम पेज पर जाएं</a>
+</body>
+</html>
