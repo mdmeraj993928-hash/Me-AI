@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate Generator</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 20px; }
+        .form-box { margin-bottom: 20px; padding: 20px; border: 1px solid #ccc; display: inline-block; }
+        .cert-box { border: 10px double #007bff; padding: 40px; display: inline-block; width: 80%; background: #f9f9f9; margin-top: 20px; }
+        input { padding: 8px; margin: 5px; }
+        .btn { padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; cursor: pointer; border: none; }
+    </style>
+</head>
+<body>
+    <h1>अपना सर्टिफिकेट जनरेट करें</h1>
+    <div class="form-box">
+        <input type="text" id="name" placeholder="अपना नाम लिखें"><br>
+        <input type="text" id="dob" placeholder="जन्म तिथि (DOB)"><br>
+        <input type="text" id="fname" placeholder="पिता का नाम"><br>
+        <input type="text" id="mname" placeholder="माता का नाम"><br>
+        <button class="btn" onclick="generateCert()">सर्टिफिकेट देखें</button>
+    </div>
+
+    <div id="cert" class="cert-box" style="display:none;">
+        <h1>Certificate of Completion</h1>
+        <p>यह प्रमाणित किया जाता है कि <strong><span id="resName"></span></strong></p>
+        <p>जन्म तिथि: <span id="resDob"></span></p>
+        <p>सुपुत्र/सुपुत्री: <span id="resFname"></span> एवं <span id="resMname"></span></p>
+        <p>ने Me-AI का कोर्स सफलतापूर्वक पूरा कर लिया है।</p>
+    </div>
+
+    <script>
+        function generateCert() {
+            document.getElementById('resName').innerText = document.getElementById('name').value;
+            document.getElementById('resDob').innerText = document.getElementById('dob').value;
+            document.getElementById('resFname').innerText = document.getElementById('fname').value;
+            document.getElementById('resMname').innerText = document.getElementById('mname').value;
+            document.getElementById('cert').style.display = 'block';
+        }
+    </script>
+</body>
+                                       </html>
+                                       
